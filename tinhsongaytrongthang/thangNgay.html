@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <input type="number" id="date" />
+        <input type="button" value="tính số ngày" onclick="tinhsongay()" />
+        <div id="hienthi"></div>
+    </form>
+    <script>
+        function tinhsongay() {
+            let date = document.getElementById('date').value;
+            switch (date) {
+                case '1':
+                case '3':
+                case '5':
+                case '7':
+                case '8':
+                case '10':
+                case '12':
+                    document.getElementById('hienthi').innerHTML = 'tháng ' + date + ' có 31 ngày';
+                    break;
+                case '4':
+                case '6':
+                case '9':
+                case '11':
+                    document.getElementById('hienthi').innerHTML = 'tháng ' + date + ' có 30 ngày';
+                    break;
+                case '2':
+                    document.getElementById('hienthi').innerHTML = 'tháng ' + date + ' có 29 ngày';
+                    break;
+                default:
+                    document.getElementById('hienthi').innerHTML = 'tháng này của anh Tài ^^';
+
+            }
+        }
+    </script>
+</body>
+
+</html>
