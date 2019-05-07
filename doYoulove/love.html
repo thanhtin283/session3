@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body align='center' style="background-color:rgba(239, 255, 20, 0.747)">
+    <form >
+        <h3>
+            <p>Do You Love My</p>
+        </h3>
+        <input type="button" value="yes" class="btn btn-success" onclick="love()" style="position: absolute; left: 630px; top: 60px;" />
+        <input type="button" value="No" class="btn btn-success" id="nobt" onmouseover="lovemy()" 
+        style="position: absolute; left: 700px; top: 60px;"/>
+    </form>
+    <script>
+        function love() {
+            alert('I Love You');
+        }
+        function lovemy() {
+            var x = Math.round(Math.random() * window.innerWidth);
+            var y = Math.round(Math.random() * window.innerHeight);
+            document.getElementById('nobt').style.left = x + 'px';
+            document.getElementById('nobt').style.top = y + 'px';
+        }
+    </script>
+</body>
+
+</html>
