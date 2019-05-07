@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<head>
+    <style>
+        th {
+            border: 3px solid Green;
+            border-collapse: collapse;
+            padding: 5px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <table  style="width:200px;margin-left: 10px;
+        margin-top: 10px;" >
+            <th>
+                <form name='calculator'>
+                <input type="text" value="" name="tin"></br></br>
+                <input type="button" class="btn btn-default" value="1" onclick="calculator.tin.value +='1'">&ensp;&ensp;
+                <input type="button" class="btn btn-default" value="2" onclick="calculator.tin.value +='2'">&ensp;&ensp;
+                <input type="button" class="btn btn-default" value="3" onclick="calculator.tin.value +='3'">&ensp;&ensp;
+                <input type="button" class="btn btn-default" value="+" onclick="calculator.tin.value +='+'"></br></br>
+                <input type="button" class="btn btn-default" value="4" onclick="calculator.tin.value +='4'">&ensp;&ensp;
+                <input type="button" class="btn btn-default" value="5" onclick="calculator.tin.value +='5'">&ensp;&ensp;
+                <input type="button" class="btn btn-default" value="6" onclick="calculator.tin.value +='6'">&ensp;&ensp;
+                <input type="button" class="btn btn-default" value="-" onclick="calculator.tin.value +='-'"></br></br>
+                <input type="button" class="btn btn-default" value="7" onclick="calculator.tin.value +='7'">&ensp;&ensp;
+                <input type="button" class="btn btn-default" value="8" onclick="calculator.tin.value +='8'">&ensp;&ensp;
+                <input type="button" class="btn btn-default" value="9" onclick="calculator.tin.value +='9'">&ensp;&ensp;
+                <input type="button" class="btn btn-default" value="*" onclick="calculator.tin.value +='*'"></br></br>
+                <input type="button" class="btn btn-default" value="C" onclick="calculator.tin.value = ''">&ensp;&ensp;
+                <input type="button" class="btn btn-default" value="0" onclick="calculator.tin.value +='0'">&ensp;&ensp;
+                <input type="button" class="btn btn-default" value="=" onclick="calculator.tin.value = eval(calculator.tin.value)">&ensp;&ensp;
+                <input type="button" class="btn btn-default" value="/" onclick="calculator.tin.value +='/'">&ensp;&ensp;
+                </form>
+
+            </th>
+
+        </table>
+    </div>
+</body>
+
+</html>
